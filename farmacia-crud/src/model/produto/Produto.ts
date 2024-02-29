@@ -6,5 +6,6 @@ export default interface Postagem {
   descricao: string;
   data: string;
   preco: number;
+  foto: string
   categoria: Categoria | null;
 }

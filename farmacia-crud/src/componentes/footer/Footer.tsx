@@ -1,5 +1,6 @@
 import React from 'react'
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Footer() {
  
@@ -19,18 +20,18 @@ function Footer() {
         <div className="flex flex-col items-center w-full my-20">
           <div className="flex flex-col items-center gap-6 mb-8">
             <div className="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
-              <a
+              <Link to='/catalogo'
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                About
-              </a>
-              <a
+                Catálogo
+              </Link>
+              <Link to='/categoria'
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Features
-              </a>
+                Categoria
+              </Link>
               <a
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
@@ -41,25 +42,25 @@ function Footer() {
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Resources
+                Recursos
               </a>
               <a
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Partners
+                Parceiros
               </a>
               <a
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Help
+                Ajuda
               </a>
               <a
                 href="javascript:void(0)"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Terms
+                Termos
               </a>
             </div>
             <div className="flex items-center gap-8">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Navbar() {
@@ -25,8 +26,8 @@ function Navbar() {
           </div>
           <div className="flex items-center lg:shrink-0 lg:flex-nowrap">
             <div className="relative flex items-center lg:ml-4 sm:mr-0 mr-2 space-x-10">
-              <a className=''>Catálogo</a>
-              <a> Categoria</a>
+              <Link to= '/catalogo' className=''>Catálogo</Link>
+              <Link to= '/categoria'> Categoria</Link>
               <input
                 className="block w-full min-w-[70px] py-3 pl-12 pr-4 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500 border-stone-200 bg-clip-padding rounded-2xl"
                 placeholder="Search..."
